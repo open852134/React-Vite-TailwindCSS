@@ -5,17 +5,17 @@ import "./App.css";
 const NAVBAR_ITEMS = [
   {
     label: "Features",
-    icon: "../public/assets/icon-arrow-down.svg",
+    icon: "./assets/icon-arrow-down.svg",
     children: [
-      { label: "Todo List", icon: "../public/assets/icon-todo.svg" },
-      { label: "Calendar", icon: "../public/assets/icon-calendar.svg" },
-      { label: "Reminders", icon: "../public/assets/icon-reminders.svg" },
-      { label: "Planning", icon: "../public/assets/icon-planning.svg" },
+      { label: "Todo List", icon: "./assets/icon-todo.svg" },
+      { label: "Calendar", icon: "./assets/icon-calendar.svg" },
+      { label: "Reminders", icon: "./assets/icon-reminders.svg" },
+      { label: "Planning", icon: "./assets/icon-planning.svg" },
     ],
   },
   {
     label: "Company",
-    icon: "../public/assets/icon-arrow-down.svg",
+    icon: "./assets/icon-arrow-down.svg",
     children: [{ label: "History" }, { label: "Our Team" }, { label: "Blog" }],
   },
   { label: "Careers" },
@@ -34,7 +34,7 @@ function App() {
       <nav className="relative mx-auto px-3 py-3 mb-10">
         <div className="flex items-center justify-between">
           <div className="flex">
-            <img src="../public/assets/logo.svg" className="inline-block" />
+            <img src="./assets/logo.svg" className="inline-block" />
 
             {/* Menu Item Desktop */}
             <div className="hidden xl:flex space-x-4 ml-6">
@@ -89,7 +89,7 @@ function App() {
             className="hamburger focus:outline-none xl:hidden w-[32px] h-[28px] flex flex-col justify-around"
             onClick={handleMenuTrigger}
           >
-            <img src="../public/assets/icon-menu.svg" />
+            <img src="./assets/icon-menu.svg" />
           </button>
         </div>
 
@@ -112,7 +112,7 @@ function App() {
             )}
           >
             <button className="ml-auto block" onClick={handleMenuTrigger}>
-              <img src="../public/assets/icon-close-menu.svg" />
+              <img src="./assets/icon-close-menu.svg" />
             </button>
 
             <ul className="space-y-6 text-lg mb-8">
@@ -185,27 +185,27 @@ function App() {
 
           <ol className="sponsor flex space-x-6">
             <li>
-              <img src="../public/assets/client-audiophile.svg" />
+              <img src="./assets/client-audiophile.svg" />
             </li>
             <li>
-              <img src="../public/assets/client-databiz.svg" />
+              <img src="./assets/client-databiz.svg" />
             </li>
             <li>
-              <img src="../public/assets/client-maker.svg" />
+              <img src="./assets/client-maker.svg" />
             </li>
             <li>
-              <img src="../public/assets/client-meet.svg" />
+              <img src="./assets/client-meet.svg" />
             </li>
           </ol>
         </div>
 
         <div className="xl:w-1/2">
           <img
-            src="../public/assets/image-hero-desktop.png"
+            src="./assets/image-hero-desktop.png"
             className="hidden xl:block"
           />
           <img
-            src="../public/assets/image-hero-mobile.png"
+            src="./assets/image-hero-mobile.png"
             className="xl:hidden w-full"
           />
         </div>
