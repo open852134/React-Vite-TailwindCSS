@@ -1,0 +1,11 @@
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  height: initial;
+}
+
+.dropdown:hover .dropdown-icon,
+.dropdown:focus-within .dropdown-icon {
+  transform: rotate(180deg);
+}
